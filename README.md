@@ -1,12 +1,21 @@
 # ScreenRes
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.14.
+Library with responsive full screen image and centered title
 
-## Code scaffolding
+## Getting Started
 
 Run `ng generate component component-name --project screen-res` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project screen-res`.
 > Note: Don't forget to add `--project screen-res` or else it will be added to the default project in your `angular.json` file. 
 
+##Properties
+|Property |Description                               |
+|---------|------------------------------------------|
+|[Image0] |Path to image with a ratio of 0.4 - 0.5   |
+|[Image1] |Path to image with a ratio of 0.5 - 0.6   |
+|[Image2] |Path to image with a ratio of 0.7 - 0.8   |
+|[Image3] |Path to image with a ratio of 1.3 - 1.4   |
+|[Image4] |Path to image with a ratio of 1.7 - 1.8   |
+|[Image5] |Path to image with a ratio of over  1.9   |
 ## Build
 
 Run `ng build screen-res` to build the project. The build artifacts will be stored in the `dist/` directory.

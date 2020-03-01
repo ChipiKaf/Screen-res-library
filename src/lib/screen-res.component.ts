@@ -66,10 +66,10 @@ constructor(private screenRes: ScreenResService) { }
        if (ratio >= 0.4 && ratio < 0.5) {
         this.content.nativeElement.style.background = 'no-repeat center/100% url("' + this.Image0 + '")';
 
-        } else if (ratio >= 0.5 && ratio < 0.58) {
+        } else if (ratio >= 0.5 && ratio < 0.6) {
         this.content.nativeElement.style.background = 'no-repeat center/100% url("' + this.Image1 + '")';
 
-        } else if (ratio >= 0.7 && ratio < 0.78) {
+        } else if (ratio >= 0.7 && ratio < 0.8) {
         this.content.nativeElement.style.background = 'no-repeat center/100% url("' + this.Image2 + '")';
 
       } else if (ratio >= 1.3 && ratio < 1.4) {
