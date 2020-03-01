@@ -7,7 +7,7 @@ Library with responsive full screen image and centered title
 Run `ng generate component component-name --project screen-res` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project screen-res`.
 > Note: Don't forget to add `--project screen-res` or else it will be added to the default project in your `angular.json` file. 
 
-##Properties
+## Properties
 |Property |Description                               |
 |---------|------------------------------------------|
 |[Image0] |Path to image with a ratio of 0.4 - 0.5   |
