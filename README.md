@@ -4,9 +4,8 @@ Library with responsive full screen image and centered title
 
 ## Getting Started
 
-Run `ng generate component component-name --project screen-res` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project screen-res`.
-> Note: Don't forget to add `--project screen-res` or else it will be added to the default project in your `angular.json` file. 
-
+Run `npm i ck-screen-res --save` to install the library.
+Add `ScreenResModule` to the imports of `app.module.ts` 
 ## Properties
 |Property |Description                                  |
 |---------|---------------------------------------------|
