@@ -5,7 +5,8 @@ Library with responsive full screen image and centered title
 ## Getting Started
 
 Run `npm i ck-screen-res --save` to install the library.
-Add `ScreenResModule` to the imports of `app.module.ts` 
+Add `ScreenResModule` to the imports of `app.module.ts` .
+Use the `nk-screen-res` selector to add to components.
 ## Properties
 |Property |Description                                  |
 |---------|---------------------------------------------|
