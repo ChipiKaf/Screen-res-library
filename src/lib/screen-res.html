@@ -7,11 +7,24 @@
 
 <p nkScreenRes >This is a message</p> -->
 <div  [ngStyle]="largeStyle" #content nkScreenRes>
-    <div fxLayout="row" style="width:100%; height: 100vh;" fxLayoutAlign="center center">
-        <section>
-            <h1 [ngStyle]="titleStyle" #title>
+    <div fxLayout="column" style="width:100%; height: 100vh;" fxLayoutAlign="center center">
+        <section *ngIf="isTitle">
+            <h1 style="margin-bottom:0px;" [ngStyle]="titleStyle" #title>
                 {{titleText}}
             </h1>
+        </section>
+        <section  *ngIf="isCaption">
+            <h4 style="margin-top:0; margin-bottom: 0; text-align: center;" [ngStyle]="captionStyle" #caption>
+                {{captionText}}</h4>
+        </section>
+        <section *ngIf="isButton">
+            <a [ngStyle]="linkStyle" (click)="buttonClick.emit()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <fa-icon [icon]="faCoffee" [size]="buttonSize"></fa-icon>
+            </a>
         </section>
     </div>
 </div>

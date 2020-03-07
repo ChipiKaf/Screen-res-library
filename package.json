@@ -1,17 +1,24 @@
 {
   "name": "ck-screen-res",
-  "version": "0.0.1",
+  "version": "1.0.2",
   "description": "Responsive main page cover",
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14"
   },
-  "author": {"name": "Chipili Kafwilo", 
-    "email": "ckafwilo@gmail.com"},
-  "repository": {"type": "git", 
-    "url": "https://github.com/ChipiKaf/Screen-res-library"},
+  "author": {
+    "name": "Chipili Kafwilo",
+    "email": "ckafwilo@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChipiKaf/Screen-res-library"
+  },
   "dependencies": {
     "@angular/cdk": "^8.2.3",
-    "@angular/flex-layout": "^7.0.0-beta.24"
+    "@angular/flex-layout": "^7.0.0-beta.24",
+    "@fortawesome/angular-fontawesome": "^0.4.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1"
   }
 }

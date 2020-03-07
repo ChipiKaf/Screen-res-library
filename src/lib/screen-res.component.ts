@@ -1,32 +1,51 @@
 import { ScreenResService } from './screen-res.service';
-import { Component, OnInit, ViewChild, ElementRef, Input, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Input, ViewEncapsulation, Output, EventEmitter } from '@angular/core';
+import { faCoffee, faPowerOff } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'nk-screen-res',
   templateUrl: './screen-res.html',
-  styles: [],
+  styleUrls: ['./screen-res.css'],
   encapsulation: ViewEncapsulation.None
 })
 export class ScreenResComponent implements OnInit {
  @ViewChild('content', null) content: ElementRef;
  @ViewChild('title', null) title: ElementRef;
+ @ViewChild('caption', null) captionReference: ElementRef;
  @Input() name1;
+ @Input() chosen = 'fas fa-power-off';
 largeStyle = {};
 titleStyle = {};
+captionStyle = {};
+linkStyle = {};
+originalContent: string;
+controlledContent: string;
+faCoffee = faPowerOff;
+linkColour = 'white';
 @Input() Image0;
+
 @Input() Image1;
 @Input() Image2;
 @Input() Image3;
 @Input() Image4;
 @Input() Image5;
+@Input() isTitle = false;
+@Input() isCaption = false;
+@Input() isButton = false;
 @Input() titleText = '';
+@Input() buttonSize = 'lg';
 @Input() Image6;
 @Input() height = 90;
+@Input() captionText= "You matter a lot";
 @Input() width = 90;
+@Input() fontFamilyCaption = '"Courier New", Courier, monospace';
+@Input() fontSizeCaption = 2;
+@Input() fontColourCaption = 'white';
 @Input() fontFamily = '"Courier New", Courier, monospace';
 @Input() fontSize = 4;
 @Input() fontColour = 'white';
-originalContent: string;
-controlledContent: string;
+
+@Output() buttonClick = new EventEmitter<void>();
+
 constructor(private screenRes: ScreenResService) { }
 
   ngOnInit() {
@@ -59,6 +78,14 @@ constructor(private screenRes: ScreenResService) { }
     'font-family': this.fontFamily,
     'font-size': this.fontSize + 'rem',
     'color': this.fontColour
+  };
+    this.captionStyle = {
+    'font-family': this.fontFamilyCaption,
+    'font-size': this.fontSizeCaption + 'rem',
+    'color': this.fontColourCaption
+  };
+    this.linkStyle = {
+    'color': this.linkColour
   };
    // this.content.nativeElement.style.background = 'no-repeat center/100% url("' + this.Image1 + '")';
     this.screenRes.resizeSubject.subscribe((result) => {

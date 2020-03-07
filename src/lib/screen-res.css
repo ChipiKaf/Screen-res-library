@@ -1,4 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900|Paytone+One|Raleway:900&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 .main{
     font-family: 'Courier New', Courier, monospace
 }
+
+.wallpaper{
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.main-text{
+    /* font-family: 'Raleway', ; */   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+     font-size: 4rem;
+    color: white;
+}
+
+a{
+    position: relative;
+    z-index: 1000;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+a:hover
+{
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px
+    #2196f3, 0 0 80px #2196f3
+}
+
